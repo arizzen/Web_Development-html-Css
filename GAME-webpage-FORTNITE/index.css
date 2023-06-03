@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0 0 0 0;
+}
+
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#f9d349, 20%, #d57e12);
+    position: relative;
+}
+
+.logo a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: 600px;
+    font-size: 32px;
+    display: block;
+}
+
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 30px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: antiquewhite;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600px;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom: 2px solid antiquewhite;
+}
+
+nav ul li.active a{
+    border-bottom: 2px solid antiquewhite;
+}
+nav ul li#btn a{
+    border: 1px solid #f5dca8;
+    border-radius: 15px;
+    background: transparent;
+    color: antiquewhite;
+    padding: 9px 20px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 150px;
+}
+nav ul li#btn:hover a{
+    background: white;
+    border: 1px solid white;
+    color: #d57e12;
+    transition: .4s;
+}
+
+.content{
+    padding-top: 90px;
+}
+
+.main-text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.main-text h6{
+    font-size: 14px;
+    font-weight: 400;
+    color: antiquewhite;
+    margin-bottom: 40px;
+}
+
+.main-text h1{
+    font-size: 100px;
+    line-height: 1;
+    color: white;
+    margin: 20px 0 45px ;
+    padding-left: 20px;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.main-text h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.main-text p{
+    max-width: 100%;
+    width: 480px;
+    color: white;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.main-text a{
+    line-height: 1.4;
+    padding: 9px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    background: transparent;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+
+.main-text a:hover{
+    cursor: pointer;
+    color: #d57e12;
+    background-color: whitesmoke;
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.content{
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    padding-bottom: 15px;
+}
+.social{
+    position: relative;
+    z-index: 2;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+.social a img{
+    width: 40px;
+    margin-right: 25px;
+    display: inline-block;
+}
+.social a img:hover{
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.image{
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+.image img{
+    height:100%;
+}

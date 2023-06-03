@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reponsive navbar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="main">
+        <header>
+            <h2>Web Dev Creative</h2>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <button class="but">Get Started</button>
+                <div class="menu"><img src="menu-outline.svg" class="menuu" id="menu">
+                <img src="exit-outline.svg" class="exit"></div>
+            </nav>
+            <div class="drop">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <button class="but2">Get Started</button>
+            </div>
+        </header>
+        <div class="write">
+            <h1>Welcome</h1>
+            <p>this is a peaceful environment where you can carry on your work
+            however you are feeling.
+            </p>
+        </div>    
+    </section>
+    <script>
+        const toggleBtn = document.querySelector('.menu')
+        const toggleBtnIcon = document.querySelector('.menu i')
+        const dropDownMenu = document.querySelector('.drop')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isopen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isopen
+            ?'menuu'
+            :'exit'
+        }
+    </script>
+</body>
+</html>

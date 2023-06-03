@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    background:url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.side-nav{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 130px;
+    height: 100%;
+    padding: 30px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.user{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     font-size: 12px;
+     padding: 10px;
+     border-radius: 8px;
+     margin-left: auto;
+     margin-right: auto;
+}
+.user p{
+    display: none;
+}
+.user h2{
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    display: none;
+}
+.user-img{
+    width: 50px;
+    height: 55px;
+    border-radius: 50%;
+    margin: auto;
+}
+.star{
+    width: 20px;
+    display: none;
+}
+ul{
+    list-style: none;
+    padding: 0 15px;
+}
+ul li{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+ul li img{
+    width: 30px;
+    margin-right: 10px;
+    display: flex;
+    
+}
+ul li p{
+    white-space: nowrap;
+    display: none;
+}
+
+.side-nav:hover{
+    width: 250px;
+    transition: width 0.5s;
+}
+.side-nav:hover h2{
+    display: block;
+}
+.side-nav:hover p{
+    display: block;
+}
+.side-nav:hover .star{
+    display: block;
+}
+.side-nav:hover .user{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+.side-nav:hover .user-img{
+    margin: 0;
+}
+
+.side-nav:hover ul li p{
+    display: block;
+}
+.side-nav:hover ul li{
+    display: flex;
+    justify-content: flex-start;
+}
+ul li:hover img{
+    transform: scale(2);
+    transition: 0.2s;
+}
+.user-img:hover{
+    transform: scale(1.3);
+    transition: 0.8s;
+}
